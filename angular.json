@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "route-guards": {
+      "projectType": "library",
+      "root": "projects/route-guards",
+      "sourceRoot": "projects/route-guards/src",
+      "prefix": "rg",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/route-guards/tsconfig.lib.json",
+            "project": "projects/route-guards/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/route-guards/src/test.ts",
+            "tsConfig": "projects/route-guards/tsconfig.spec.json",
+            "karmaConfig": "projects/route-guards/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/route-guards/tsconfig.lib.json",
+              "projects/route-guards/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "route-guards-demo"
 }

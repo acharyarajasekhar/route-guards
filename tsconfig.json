@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "route-guards": [
+        "dist/route-guards"
+      ],
+      "route-guards/*": [
+        "dist/route-guards/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
