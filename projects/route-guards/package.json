@@ -1,11 +1,18 @@
 {
-  "name": "route-guards",
-  "version": "0.0.1",
+  "name": "@acharyarajasekhar/route-guards",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14",
     "@angular/fire": "^6.0.0",
     "firebase": "^7.14.3",
     "rxjs": "~6.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/acharyarajasekhar/route-guards.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
